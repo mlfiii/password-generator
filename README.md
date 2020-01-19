@@ -16,4 +16,4 @@ You will be prompted to choose from the following password criteria:
 
 Following is a sample of what the page looks like:
 
-![password generator demo](./Assets/password-generator-screenshot.png)
+![Password Generator Screenshot](./assets/images/password-generator-screenshot.png)
