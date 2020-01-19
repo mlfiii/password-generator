@@ -14,6 +14,8 @@ You will be prompted to choose from the following password criteria:
 
 5.  Choose "OK" if you want Uppercase characters in the password or "Cancel" if you do not.
 
+Please note that you must choose at least one type of character for your password.
+
 Following is a sample of what the page looks like:
 
 ![Password Generator Screenshot](./assets/images/password-generator-screenshot.png)

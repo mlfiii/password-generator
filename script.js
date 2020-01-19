@@ -78,7 +78,6 @@ function confirmUpper() {
 generate.addEventListener("click", () => {
   //Make sure that the password length is less than or equal to 128.
   const strLength = parseInt(promptLength());
-  // const length = +strLength;
 
   //Exit if either the legnth is not greater than 7 or is less than 129
 
