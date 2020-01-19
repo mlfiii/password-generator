@@ -99,7 +99,7 @@ generate.addEventListener("click", () => {
     strUpper === false
   ) {
     alert(
-      "You must choose 'OK' to at least once for the Symbol, Number, Upper or Lower prompts."
+      "You must choose 'OK' at least once to the Symbol, Number, Upper or Lower prompts."
     );
     return;
   }
