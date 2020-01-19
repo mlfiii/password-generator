@@ -21,21 +21,14 @@ clipboard.addEventListener("click", () => {
   const textarea = document.createElement("textarea");
   const password = resultAreaEl.innerText;
 
-  var question = prompt("Create a memo");
-  if (question) {
-    alert("true - " + question);
-  } else {
-    alert("false - " + question);
-  }
-
   //If the password is blank, exit the function because the password has not been set yet.  Alert the user.
   if (!password) {
-    alert("You must set generate a password first!");
+    alert("You must generate a password first!");
     return;
   }
 
   if (password === "Your Secure Password") {
-    alert("You must set generate a password first!");
+    alert("You must generate a password first!");
     return;
   }
   //Create a text area that holds the password to be copied to clipboard
@@ -97,6 +90,8 @@ generate.addEventListener("click", () => {
     strContinue = "";
   } else {
     alert("You have cancelled the Password Generator!");
+    resultAreaEl.innerText = "Your Secure Password";
+    resultAreaEl.style.color = "black";
     return;
   }
   if (strLength < 8) {
