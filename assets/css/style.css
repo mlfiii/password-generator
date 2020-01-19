@@ -42,7 +42,7 @@ div {
 }
 
 .generate-password-button {
-  border-radius: 12px;
+  border-radius: 30px;
   background-color: darkred;
   border: none;
   color: white;
@@ -56,7 +56,7 @@ div {
 }
 
 .copy-to-clipboard-button {
-  border-radius: 12px;
+  border-radius: 30px;
   background-color: lightgray;
   border: none;
   color: white;
