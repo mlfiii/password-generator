@@ -26,6 +26,11 @@ clipboard.addEventListener("click", () => {
     alert("You must set generate a password first!");
     return;
   }
+
+  if (password === "Your Secure Password") {
+    alert("You must set generate a password first!");
+    return;
+  }
   //Create a text area that holds the password to be copied to clipboard
   textarea.value = password;
   document.body.appendChild(textarea);
