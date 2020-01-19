@@ -21,6 +21,13 @@ clipboard.addEventListener("click", () => {
   const textarea = document.createElement("textarea");
   const password = resultAreaEl.innerText;
 
+  var question = prompt("Create a memo");
+  if (question) {
+    alert("true - " + question);
+  } else {
+    alert("false - " + question);
+  }
+
   //If the password is blank, exit the function because the password has not been set yet.  Alert the user.
   if (!password) {
     alert("You must set generate a password first!");
@@ -83,9 +90,15 @@ function confirmUpper() {
 generate.addEventListener("click", () => {
   //Make sure that the password length is less than or equal to 128.
   const strLength = parseInt(promptLength());
-
+  var strContinue = "";
   //Exit if either the legnth is not greater than 7 or is less than 129
 
+  if (strLength) {
+    strContinue = "";
+  } else {
+    alert("You have cancelled the Password Generator!");
+    return;
+  }
   if (strLength < 8) {
     alert("Please choose a password length greater than 7!");
     return;
