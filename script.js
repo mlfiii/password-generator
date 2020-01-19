@@ -15,6 +15,9 @@ const randomFunc = {
   symbol: getRandomSymbol
 };
 
+//Set the focus on the generate button so the enter key can be used to start the generate password.
+document.getElementById("generate").focus();
+
 // Setup the listener for the clipboard
 clipboard.addEventListener("click", () => {
   //Setup the objects
