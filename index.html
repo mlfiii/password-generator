@@ -4,43 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Include bootstrap  -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
+    <!-- My style sheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel='icon' href='assets/images/favicon.ico' type='image/x-icon'/ >
     <title>Password Generator</title>
   </head>
   <body>
+    <!-- Wrap whole page in container -->
     <div id="page-container" class="container rounded shadow">
       <h1>Password Generator</h1>
       <hr />
       <div id="content-row" class="row">
-        <!-- <div class="col-md-1"></div> -->
+        <!-- Content area -->
         <div id="content" class="col-md-12 text-center">
           <h2>Generate a Password</h2>
           <hr />
-          <!-- <label for="length">Input Password Length</label>
-          <input type="number" id="length" min="8" max="20" value="20" /> -->
-
-          <!-- <label for="symbols">Include Special Characters?</label> -->
-          <!-- <input type="checkbox" id="symbols" checked /> -->
-
-          <!-- <label for="numbers">Include Numbers?</label>
-          <input type="checkbox" id="numbers" checked />
-          <label for="lowercase">Include Lower Characters?</label>
-          <input type="checkbox" id="lowercase" checked />
-          <label for="uppercase">Include Upper Characters?</label>
-          <input type="checkbox" id="uppercase" checked /> -->
-          <div id="result-area">
-            <!-- <div class="col-md-8"><span id="result"></span></div> -->
-          </div>
+          <!-- Place results in this area -->
+          <div id="result-area"></div>
           <hr />
           <div class="row">
-            <!-- <div class="col-md-1"></div> -->
             <div id="generate-password-area" class="col-md-6">
               <button id="generate" class="generate-password-button">
                 Generate Password
