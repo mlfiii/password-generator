@@ -44,6 +44,8 @@ clipboard.addEventListener("click", () => {
   // resultAreaEl.style.backgroundColor = "lightgreen";
   //Alert user that the password has been copied to clipboard.
   alert("Your new password has been copied to clipboard!");
+  //Set the focus back to the generate password button.
+  document.getElementById("generate").focus();
 });
 
 //Function that prompts for the desired length.
