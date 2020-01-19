@@ -17,7 +17,8 @@ and ensure that the padding is taken away. */
 }
 /* Set the header formatting */
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -32,6 +33,7 @@ div {
   border: dashed grey;
   height: 200px;
   width: 100%;
+  padding: 20px;
 }
 
 #clipboard-button-area {

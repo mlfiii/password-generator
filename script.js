@@ -31,16 +31,21 @@ clipboard.addEventListener("click", () => {
   document.body.appendChild(textarea);
   textarea.select();
   document.execCommand("copy");
+  resultAreaEl.style.backgroundColor = "lightgrey";
   textarea.remove();
+  // resultAreaEl.style.backgroundColor = "lightgreen";
   //Alert user that the password has been copied to clipboard.
   alert("Your new password has been copied to clipboard!");
 });
 
 //Function that prompts for the desired length.
 function promptLength() {
+  //reset to white in case the had previously copied to clipboard.
+  resultAreaEl.style.backgroundColor = "white";
+
   const strLength = prompt(
     "Please enter the password length greater than 7!",
-    "20"
+    "8"
   );
   return strLength;
 }
@@ -76,6 +81,7 @@ generate.addEventListener("click", () => {
   // const length = +strLength;
 
   //Exit if either the legnth is not greater than 7 or is less than 129
+
   if (strLength < 8) {
     alert("Please choose a password length greater than 7!");
     return;
@@ -104,6 +110,7 @@ generate.addEventListener("click", () => {
     return;
   }
   //Set the resultAreaEL to the password function result.
+  resultAreaEl.style.color = "darkgreen";
   resultAreaEl.innerText = generatePassword(
     strLower,
     strUpper,
