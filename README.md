@@ -6,7 +6,7 @@ You will be prompted to choose from the following password criteria:
 
 1.  Enter the length of the password (must be between 8 and 128 characters).
 
-2 . Choose "OK" if you want Special characters in the password or "Cancel" if you do not.
+2.  Choose "OK" if you want Special characters in the password or "Cancel" if you do not.
 
 3.  Choose "OK" if you want Numeric characters characters in the password or "Cancel" if you do not.
 
