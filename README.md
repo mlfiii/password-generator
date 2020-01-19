@@ -17,3 +17,7 @@ You will be prompted to choose from the following password criteria:
 Following is a sample of what the page looks like:
 
 ![Password Generator Screenshot](./assets/images/password-generator-screenshot.png)
+
+Go goto the actual page live click: https://mlfiii.github.io/password-generator/
+
+Code adapted from https://codepen.io/FlorinPop17/pen/BaBePej
