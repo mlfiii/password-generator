@@ -95,6 +95,7 @@ generate.addEventListener("click", () => {
     alert("You have cancelled the Password Generator!");
     resultAreaEl.innerText = "Your Secure Password";
     resultAreaEl.style.color = "black";
+    document.getElementById("generate").focus();
     return;
   }
   if (strLength < 8) {
@@ -133,7 +134,6 @@ generate.addEventListener("click", () => {
     strSymbol,
     strLength
   );
-  // console.log(resultEl.innerText.length);
 });
 
 //The gererate password function.
